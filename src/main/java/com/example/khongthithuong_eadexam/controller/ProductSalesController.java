@@ -30,7 +30,7 @@ public class ProductSalesController {
     }
 
     @GetMapping("/product/{id}")
-    public String productDetail(@PathVariable Long id, Model model) {
+    public String productDetail(@PathVariable Integer id, Model model) {
         Optional<ProductDetails> productDetailsOptional = productDetailsRepository.findById(id);
         if (!productDetailsOptional.isPresent()) {
             return "redirect:/";

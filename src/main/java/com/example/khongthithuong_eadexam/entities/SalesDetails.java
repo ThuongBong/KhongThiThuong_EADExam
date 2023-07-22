@@ -8,7 +8,7 @@ import java.time.LocalDate;
 public class SalesDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
     private LocalDate salesDate;
 

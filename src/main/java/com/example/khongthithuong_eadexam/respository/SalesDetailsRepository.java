@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface SalesDetailsRepository extends JpaRepository<SalesDetails, Long> {
+public interface SalesDetailsRepository extends JpaRepository<SalesDetails, Integer> {
     List<SalesDetails> findByProductDetails(ProductDetails productDetails);
 }
